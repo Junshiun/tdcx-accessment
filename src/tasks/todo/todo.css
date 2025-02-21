@@ -1,0 +1,32 @@
+.todo form {
+    border: solid 1px white;
+    padding: 1rem;
+    width: 40rem;
+    min-width: fit-content;
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: fit-content(100%) 1fr;
+    gap: 1rem;
+}
+
+.todo table {
+    width: 100%;
+}
+
+.todo th, tr, td {
+    border: solid 1px white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.todo textarea {
+    height: 5rem;
+}
+
+.todo table input, .todo table textarea {
+    width: 100%;
+}
+
+.todo table button {
+    height: 100%;
+}
