@@ -8,7 +8,7 @@ import { CardComponent } from './tasks/card/card'
 import { Form } from './tasks/form/form'
 import { useState } from 'react'
 import { Shopping } from './tasks/context/context'
-import { BrowserRouter, Route, Router, Routes } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { RouterLink } from './tasks/router/router'
 
 const books = [
