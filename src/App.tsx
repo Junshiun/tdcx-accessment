@@ -8,7 +8,7 @@ import { CardComponent } from './tasks/card/card'
 import { Form } from './tasks/form/form'
 import { useState } from 'react'
 import { Shopping } from './tasks/context/context'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Outlet, Route, Routes } from 'react-router-dom'
 import { RouterLink } from './tasks/router/router'
 
 const books = [
@@ -91,6 +91,7 @@ const TabRenderer = () => {
       {
           tabs[activeTab].component
       }
+      <Outlet />
     </>
   )
 }
@@ -100,9 +101,11 @@ function App() {
   return (
      <BrowserRouter>
       <Routes>
-        <Route path="/" element={<TabRenderer />} />
-        <Route path="page1" element={<h3>This is page 1</h3>} />
-        <Route path="page2" element={<h3>This is page 2</h3>} />
+        <Route path="/tdcx-accessment" element={<TabRenderer />} />
+        <Route path="/tdcx-accessment">
+          <Route path="page1" element={<h3>This is page 1</h3>} />
+          <Route path="page2" element={<h3>This is page 2</h3>} />
+        </Route>
       </Routes>
     </BrowserRouter>
   )

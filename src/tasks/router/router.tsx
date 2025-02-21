@@ -6,7 +6,7 @@ import { Link } from "react-router-dom"
 
 export const RouterLink = (props: {title: string, link: string}) => {
     return (
-        <Link to={`/${props.link}`}>
+        <Link to={`/tdcx-accessment/${props.link}`}>
             {
                 props.title
             }
