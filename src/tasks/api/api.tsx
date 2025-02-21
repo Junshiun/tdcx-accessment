@@ -57,7 +57,11 @@ const StateSwitch = (props: {loadingState: string, data: TPost[], setSelectedPos
                 )
             case pending:
                 return (
-                    <span className="loading">Loading ...</span>
+                    <>
+                        <span className="spinning">C</span>
+                        <br/>
+                        <span className="loading">Loading</span>
+                    </>
                 )
             default:
                 return (

@@ -33,6 +33,17 @@
     cursor: pointer;
 }
 
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.posts .spinning {
+    animation: spin 2s linear infinite;
+    transform-origin: center;
+}
+
 .selected-popup {
     position: fixed;
     display: flex;
