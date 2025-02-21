@@ -91,7 +91,6 @@ const TabRenderer = () => {
       {
           tabs[activeTab].component
       }
-      <Outlet />
     </>
   )
 }
